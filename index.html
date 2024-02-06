@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer 2.0</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="js/main.js" type="module" defer></script>
+  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main id="principle">
+    <button data-action="toggleTheme" id="toggleTheme">
+      <span class="sr-only">Ativar dark mode</span>
+      <i class="ph-bold ph-sun"></i>
+      <i class="ph-bold ph-moon"></i>
+    </button>
+    
+    <div class="timer-block">
+      <span id="timer" class="flex">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </span>
+
+      <div id="controls">
+        <button data-action="play" class="ph ph-play-circle">
+          <span class="sr-only">Iniciar timer</span>
+        </button>
+        <button data-action="pause" class="ph ph-stop-circle">
+          <span class="sr-only">Parar timer</span>
+        </button>
+        <button data-action="addMinutes" class="ph ph-plus-circle">
+          <span class="sr-only">Adicionar 5 minutos</span>
+        </button>
+        <button data-action="rmvMinutes" class="ph ph-minus-circle">
+          <span class="sr-only">Tirar 5 minutos</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="buttons-block">
+      <button data-action="toggleForest" class="ph ph-tree-evergreen">
+        <span class="sr-only">Iniciar/pausar som de floresta</span>
+      </button>
+      <button data-action="toggleRain" class="ph ph-cloud-rain">
+        <span class="sr-only">Iniciar/pausar som de chuva</span>
+      </button>
+      <button data-action="toggleCoffee" class="ph ph-storefront">
+        <span class="sr-only">Iniciar/pausar som de cafeteria</span>
+      </button>
+      <button data-action="toggleFire" class="ph ph-fire">
+        <span class="sr-only">Iniciar/pausar som de lareira</span>
+      </button>
+    </div>
+  </main>
+</body>
+</html>

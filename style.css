@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: rgb(232, 232, 232);
+  --bg-body: white;
+  --bg-buttons: #d2d2d2;
+  --bg-buttons-hover: #02799D; 
+  --text-button-hover: white;
+  --body-color: #323238;
+  --bt-color: white;
+}
+
+html.dark {
+  --bg-body: rgb(68, 68, 68);
+  --bg-color: rgb(46, 46, 46);
+  --body-color: rgb(255, 255, 255);
+  --bt-color: black;
+}
+
+html.dark .ph-sun,
+html:not(.dark) .ph-moon{
+  display: none;
+}
+
+body {
+  font-size: 1.6rem;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-body);
+}
+
+body, button {
+  color: var(--body-color);
+}
+
+#principle {
+  display: flex;  
+  gap: 5.5rem;
+  background-color: var(--bg-color);
+  padding: 5rem;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+#toggleTheme {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+span {
+  font-size: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+#timer span {
+  font-size: 6rem;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+#buttons-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+#buttons-block button {
+  background-color: var(--bg-buttons);
+  padding: 2.5rem;
+  border-radius: 10px;
+  color: var(--bt-color);
+}
+
+#buttons-block button:hover {
+  background-color: var(--bg-buttons-hover);
+  color: var(--text-button-hover);
+}
+
+html.forest #buttons-block .ph-tree-evergreen{
+  background-color: var(--bg-buttons-hover);
+  color: var(--text-button-hover);
+}
+
+html.rain #buttons-block .ph-cloud-rain{
+  background-color: var(--bg-buttons-hover);
+  color: var(--text-button-hover);
+}
+
+html.coffee #buttons-block .ph-storefront{
+  background-color: var(--bg-buttons-hover);
+  color: var(--text-button-hover);
+}
+
+html.fire #buttons-block .ph-fire{
+  background-color: var(--bg-buttons-hover);
+  color: var(--text-button-hover);
+}
