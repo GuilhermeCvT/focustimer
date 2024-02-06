@@ -13,9 +13,8 @@ Além disso, 4 botões que reproduzem o som de arquivos de áudio em loop enquan
 - ☕Cafeteria;
 - 🔥Fogo.
 
-Como um adicional, foi adicionado um botão de troca de tema, intercalando entre **Dark** e **Light**.
+Como um complemento, foi adicionado um botão de troca de tema, intercalando entre **Dark** e **Light**.
 
 Para esse projeto foram utilizados HTML, CSS e JS. Por ser um projeto inicial, não foi utilizado nenhuma ferramenta adicional. A proposta do desafio foi da RocketSeat, mais detalhadamente nesse [link](https://efficient-sloth-d85.notion.site/FocusTimer-Vers-o-2-0-2e273fa9212a432eae6b51dda3c69594).
 
-__**Obs.**: Existe uma limitação dos navegadores em apontar um arquivo .js localmente. Dessa forma, ao rodar a aplicação via Live Server no Visual Studio, ou via servidor, funcionará normalmente. Fonte: https://cursos.alura.com.br/forum/topico-from-origin-null-has-been-blocked-by-cors-policy-cross-origin-requests-are-only-supported-for-protocol-schemes-http-data-chrome-chrome-extension-https-101166 
-__
+<em>**Obs.**: Existe uma limitação dos navegadores em apontar um arquivo .js localmente. Dessa forma, ao rodar a aplicação via Live Server no Visual Studio, ou via servidor, funcionará normalmente. Fonte: `https://cursos.alura.com.br/forum/topico-from-origin-null-has-been-blocked-by-cors-policy-cross-origin-requests-are-only-supported-for-protocol-schemes-http-data-chrome-chrome-extension-https-101166`. </em>
